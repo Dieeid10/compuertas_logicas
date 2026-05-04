@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    @apply bg-gray-900 text-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+  }
+}
