@@ -41,7 +41,7 @@ export function ExpressionPlayground() {
 
     return (
         <section className="bg-white border border-gray-200 rounded-xl p-5">
-            <h2>Conversor de expresiones lógicas.</h2>
+
             <ExpressionInput
                 value={raw}
                 onChange={setRaw}

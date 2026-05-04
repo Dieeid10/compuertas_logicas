@@ -15,6 +15,7 @@ function App() {
         <p>Haz click para cambiar los switches de encendido y apagado.</p>
       </header>
       <BasicGates />
+      <h2>Conversor de expresiones lógicas.</h2>
       <ExpressionPlayground />
     </main>
   )
