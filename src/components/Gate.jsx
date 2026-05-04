@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { LightBulb } from "../icon/LigthBulb"
 
 export const Gate = ({ label, vars, fn, desc }) => {
     const [inputValues, setInputValues] = useState(vars.map(() => false))
@@ -52,7 +53,7 @@ export const Gate = ({ label, vars, fn, desc }) => {
                 </div>
                 <div className={`h-0.5 w-5 rounded transition-colors duration-200 ${result ? 'bg-emerald-500' : 'bg-gray-200'}`}/>
                 <span className={`text-2xl transition-all duration-200 ${result ? '' : 'grayscale brightness-50'}`}>
-                    💡
+                    <LightBulb />
                 </span>
 
                 <span className={`text-xs font-bold font-mono w-3 transition-colors duration-200 
