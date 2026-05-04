@@ -41,7 +41,7 @@ export function ExpressionPlayground() {
 
     return (
         <section className="bg-white border border-gray-200 rounded-xl p-5">
-
+            <h2>Conversor de expresiones lógicas.</h2>
             <ExpressionInput
                 value={raw}
                 onChange={setRaw}
@@ -62,13 +62,13 @@ export function ExpressionPlayground() {
                                 >
                                     <span className="text-xs font-mono font-bold text-gray-500 w-3 uppercase">{v}</span>
                                     <div className={`relative w-9 h-5 rounded-full border transition-colors duration-200
-                    ${env[v]
+                                            ${env[v]
                                             ? 'bg-emerald-500 border-emerald-600'
                                             : 'bg-gray-100 border-gray-300 group-hover:border-gray-400'
                                         }`}
                                     >
                                         <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-all duration-200
-                      ${env[v] ? 'left-4' : 'left-0.5'}`}
+                                            ${env[v] ? 'left-4' : 'left-0.5'}`}
                                         />
                                     </div>
                                 </button>
@@ -78,7 +78,7 @@ export function ExpressionPlayground() {
                         <div className={`h-0.5 w-6 rounded transition-colors ${result ? 'bg-emerald-500' : 'bg-gray-200'}`} />
 
                         <div className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-bold transition-colors
-              ${result
+                                ${result
                                 ? 'bg-emerald-50 border-emerald-400 text-emerald-700'
                                 : 'bg-gray-50 border-gray-200 text-gray-400'
                             }`}
@@ -93,7 +93,7 @@ export function ExpressionPlayground() {
                         </span>
 
                         <span className={`text-xs font-bold px-3 py-1.5 rounded-lg border transition-colors
-              ${result
+                                ${result
                                 ? 'bg-emerald-50 border-emerald-400 text-emerald-700'
                                 : 'bg-gray-50 border-gray-200 text-gray-400'
                             }`}
